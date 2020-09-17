@@ -1,0 +1,133 @@
+<html>
+<meta charset="utf-8" /> 
+<head>
+	<style type="text/css">
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-family: "Open Sans", sans-serif;
+		}
+
+		button {
+			width: 500px;
+			height: 100px;
+			font-size: 2em;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<button id="movie-button">Select Random Movie</button>
+		<h1 id="movie-text"></h1>
+	</div>
+		<script>
+		var movies = ["12 Angry Men",
+"A Goofy Movie",
+"A Nightmare on Elm Street",
+"Airplane!",
+"Aladdin",
+"Alice in Wonderland",
+"Avatar (the James Cameron one)",
+"Back to the Future",
+"Bambi",
+"Beauty and the Beast",
+"Bee Movie",
+"Black Panther",
+"Blade Runner",
+"Brave",
+"Brokeback Mountain",
+"Cars",
+"Casablanca",
+"Child’s Play",
+"Cinderella",
+"Citizen Kane",
+"Deadpool",
+"Die Hard",
+"Dumbo",
+"E.T.",
+"Fight Club",
+"Finding Nemo",
+"Forrest Gump",
+"Frankenstein",
+"Friday the 13th",
+"Frozen",
+"Ghostbusters",
+"Grease",
+"Harry Potter",
+"Home Along",
+"Inception",
+"Indiana Jones",
+"Inside Out",
+"Iron Man",
+"It’s a Wonderful Life",
+"Jaws",
+"Joker",
+"Jurassic Park",
+"King Kong",
+"Lady and the Tramp",
+"Lilo & Stitch",
+"Lord of the Rings",
+"Mary Poppins",
+"Men in Black",
+"Monsters, Inc.",
+"Monty Python and the Holy Grail",
+"Mulan",
+"Pinocchio",
+"Pirates of the Caribbean",
+"Planet of the Apes",
+"Psycho",
+"Pulp Fiction",
+"Ratatouille",
+"Rocky",
+"Saving Private Ryan",
+"Scream",
+"Sharknado",
+"Shrek",
+"Singin' in the Rain",
+"Sleeping Beauty",
+"Snow White",
+"Space Jam",
+"Star Wars",
+"Terminator",
+"The Big Lebowski",
+"The Breakfast Club",
+"The Dark Knight",
+"The Emperor's New Groove",
+"The Godfather",
+"The Hunger Games",
+"The Incredibles",
+"The Lion King",
+"The Little Mermaid",
+"The Matrix",
+"The Nightmare Before Christmas",
+"The Princess Bridge",
+"The Shawshank Redemption",
+"The Shining",
+"The Silence of the Lambs",
+"The Sixth Sense",
+"The Sound of Music",
+"There Will Be Blood",
+"Thor",
+"Titanic",
+"Totoro",
+"Toy Story",
+"Transformers",
+"Twilight",
+"Up",
+"WALL-E",
+"Who Framed Roger Rabbit",
+"Wizard of Oz",
+"Wonder Woman",
+"Wreck-It Ralph",
+"Zootopia"];
+var button = document.getElementById("movie-button");
+button.addEventListener("click", function() {
+	var movie = movies[Math.floor(Math.random()*movies.length)];
+	var text = document.getElementById("movie-text");
+	text.textContent = movie;
+});
+	</script>
+</body>
+</html>
